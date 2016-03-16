@@ -1,9 +1,14 @@
 function checkIsNull(){
 	if ($("[name='username']").val()=="" || $("[name='password']").val()==""){
 			alert("请确认信息的完整性!");
+<<<<<<< HEAD
 			return false:
 		} else {
 			return true;
+=======
+		} else {
+			$("[name='loginform']").submit();
+>>>>>>> origin/master
 		}
 }
 $(function(){
@@ -19,4 +24,10 @@ $(function(){
 			$(this).focus().select();
 		}
 	});
+<<<<<<< HEAD
+=======
+	$("[name='submit']").click(function(){
+		checkIsNull();
+	});
+>>>>>>> origin/master
 });
